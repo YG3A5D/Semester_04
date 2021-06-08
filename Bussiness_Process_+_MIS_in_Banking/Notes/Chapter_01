@@ -1,0 +1,44 @@
+## Management Information System
+ Practical: MS-Excel --> VIsual_BAsic
+
+	
+   -> Defining Information System (3 definitions)
+   -> Components of Information Systems - > People , Process , Data , H/w , s/w
+   -> Technology
+   	--> Hardware 
+	--> Software	
+	    ---> Application Software
+	    ---> Software
+        --> Data (How useful for bussiness)  Very important
+	    ---> Data driven bussineses
+		 Without data driven decisions using Big data
+ 	    ---> Communication
+	--> People
+	    ---> Front-line workers
+	    ---> System Analysts
+	    ---> Programmers 
+	    ---> CIO
+	    ---> Comman Man
+	--> Process
+	    ---> 
+   -> Role of Information System
+	--> Timeline (Remember Chart)
+ 	    ---> Novel network === CISCO
+
+   -> WALMART CASE STUDY
+	--> Use of supply chain management system 
+	    ---> Direct access to inventory level
+## LAB SESSION_01	
+
+   -> Inventory Control Systems (Here, dealing with 4 types of tables)
+	--> Opening Sales/Stock
+		Item COde, Item Name, Price/Unit, Units, TotalStockValue
+		---> EXCEL FUNCTIONS: VLOOKUP(//CellPosition,//TableName,//,/BooleanValue(T/F))
+				      IFERROR(); SUMIFS(); $N$ // To lock the value
+
+	--> Purchase/Stock In
+	--> Sales/Stock Out
+	--> Current Status of Stock //Current Stock
+		## Xtra Column's
+	  Unit === Opening Stock ; Purchase ; Sales ; Closing Stock 
+
