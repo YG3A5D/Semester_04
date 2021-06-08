@@ -1,1 +1,51 @@
+% Matlab_Practical_performed_by_YASH_GUPTA_2019BTCS088
+% ----------------------------------------------------------
+
+% STEP 1: Defining the 'x' variable with increment of 0.1
+x = [-1.5:0.1:1.5];
+% STEP 2: Defining the 'y1' variable
+y1 = [tan(x)];
+% STEP 3: Subdividing the figure window into 'TWO' axes & 'ONE' column
+subplot(2,1,1);
+% STEP 4: Plotting the graph between 'x' & 'y1'
+plot(x,y1);
+% STEP 5: Defining the label for X-Axis
+xlabel("X-Axis -->");
+% STEP 6: Defining the label for Y-Axis
+ylabel("Y-Axis -->");
+% STEP 7: Adding the title to the graph
+title({'plotting graph between tan(x) & x'; 'y = tan(x)'} );
+
+% STEP 8: Defining the 'y2' variable
+y2= [sinh(x)];
+% STEP 9: Subdividing the figure window into 'TWO' axes & 'ONE' column
+subplot(2,1,2);
+% STEP 10: Plotting the graph between 'x' & 'y2'
+plot(x,y2);
+% STEP 11: Adding the title to the graph
+title({'plotting graph between sinh(x) & x'; 'y = sinh(x)'});
+% STEP 12: Defining the label for X-Axis
+xlabel("X-Axis -->");
+% STEP 13: Defining the label for Y-Axis
+ylabel("Y-Axis -->");
+
+% When dividing figure window vertically 
+    subplot(1,2,1);
+    plot(x,y1);
+% STEP 14: Defining the label for X-Axis
+xlabel("X-Axis -->");
+% STEP 15: Defining the label for Y-Axis
+ylabel("Y-Axis -->");
+% STEP 16: Adding the title to the graph
+title({'plotting graph between tan(x) & x'; 'y = tan(x)'} );
+
+    subplot(1,2,2);
+    plot(x,y2);
+% STEP 17: Adding the title to the graph
+title({'plotting graph between sinh(x) & x'; 'y = sinh(x)'});
+% STEP 18: Defining the label for X-Axis
+xlabel("X-Axis -->");
+% STEP 19: Defining the label for Y-Axis
+ylabel("Y-Axis -->");    
+
 
