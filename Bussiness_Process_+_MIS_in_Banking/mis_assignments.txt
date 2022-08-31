@@ -1,0 +1,13 @@
+1- ms-access- form
+2- data visualization in excel - charts /pie chart/graphs
+3- pareto chart
+4- MIS in Business analytics - examples and uses.
+5- case study any topic of mis
+
+skill:
+
+1- pivot chart 
+2- slicer 
+3- importing data into excel
+4- vlookup and data validation (Creating list)
+5- creating datacube in excel
