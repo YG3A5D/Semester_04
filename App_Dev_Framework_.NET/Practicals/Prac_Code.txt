@@ -1,0 +1,106 @@
+// C# Program for checking same elements at both the ends of Array by Yash_Gupta_2019BTCS088 //
+using System;
+
+public class Assignment_04
+{
+public static void Main()
+{
+	string Username, Password ;
+	int CTR = 0 , DD = 0 ;  
+	Console.Write("\nCheck Username & Password :\n");
+	Console.Write("\nDefault Username & Password is : SuasStud & 987654321\n");
+	Console.Write("----------------------------------------\n");
+do 
+{
+	Console.Write("Please provide Username : ");
+	Username = Console.ReadLine();
+	Console.Write("Please provide Password : ");
+	Password = Console.ReadLine();
+	if ( Username == "SuasStud" &&  Password == "987654321" )
+	{
+			DD = 1; CTR = 3;
+	}
+	else 
+	{
+			DD = 0 ; CTR++ ;
+	}
+}	
+while ((Username != "SuasStud"  || Password != "987654321" ) && (CTR != 3));
+{
+	if (DD == 0)
+	{
+		Console.Write("\nLogin attempt more than 3 times. Please Try Later!! Sorry for inconvenience caused \n\n");
+	}
+	else 
+	{
+		if (DD == 1) 
+		{
+			Console.Write("\nPassword entered successfully !!! \n\n");
+		}
+	}
+}
+}
+}
+
+	
+
+
+
+
+// Question 2
+
+
+// C# Program for checking same elements at both the ends of Array by Yash_Gupta_2019BTCS088 //
+using System;
+
+public class Assignment_04
+{
+public static void Main()
+{
+	float Distance, Hour, Min, Sec, TimeSec, MPS, KPH, MPH ; // Declaring variables
+	Console.Write("\nPlease enter Distance (in metres) :\n");
+	Distance = Convert.ToSingle(Console.ReadLine());
+	Console.Write("\nPlease enter Time (in hours) :\n");
+	Hour = Convert.ToSingle(Console.ReadLine());
+	Console.Write("\nPlease enter Time (in minutes) :\n");
+	Min = Convert.ToSingle(Console.ReadLine());
+	Console.Write("\nPlease enter Time (in seconds) :\n");
+	Sec = Convert.ToSingle(Console.ReadLine());
+	
+	TimeSec = (Hour*3600) + (Min*60) + Sec ;
+	MPS = Distance/TimeSec ;
+	KPH = (Distance/1000.0f)/(TimeSec/3600.0f) ;
+	MPH = KPH/1.609f ; 
+	
+	Console.WriteLine("Your Speed in metres.sec is {0}", MPS);
+	Console.WriteLine("Your Speed in km/hour is {0}", KPH);
+	Console.WriteLine("Your Speed in miles/hour is {0}", MPH);
+}
+}
+
+	
+
+// C# Program for checking same elements at both the ends of Array by Yash_Gupta_2019BTCS088 //
+using System;
+
+public class Assignment_04
+{
+public static void Main()
+{
+	int Number_01 , Number_02 ;
+	bool BothEven ;
+	Console.Write("Input First Number: ") ;
+	Number_01 = Convert.ToInt32(Console.ReadLine());
+	Console.Write("Input Second Number: ") ;
+	Number_02 = Convert.ToInt32(Console.ReadLine());
+	
+	
+	// if Both Numbers are EVEN ==> (Numnber_01%2==0) || (Number_02%2 == 0) ? false:true
+	BothEven = ((Number_01 % 2 == 0) && (Number_02 % 2 == 0)) ? true : false; // Using functional programming method
+	
+	Console.WriteLine(BothEven ?
+					 "True" : "False" ) ;
+}
+}
+
+	
