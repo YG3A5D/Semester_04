@@ -1,0 +1,103 @@
+// ASSIGNMENT 7
+
+// Question 1
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DateTimePractical {
+
+	public class Program
+	{
+		public static void Main()
+		{
+			Console.WriteLine("COMPLETE DATE : ");
+			DateTime now = DateTime.Now;
+			Console.WriteLine( now + " AM ");
+			Console.WriteLine("SHORT DATE : ");
+			Console.WriteLine(DateTime.Now.ToString("d"));
+			Console.WriteLine("TIME IN 24 HR FORMAT : ");
+			Console.WriteLine(DateTime.Now.ToString("d") + DateTime.Now.ToString(" HH:mm ") + " AM");
+		}
+	}
+	
+}
+
+
+----------------------------------------------------------------------------------------------------------
+
+// Question 2
+
+using System;
+
+
+namespace DateTimePractical {
+
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			DateTime now = DateTime.Now;
+			Console.WriteLine( "Year : " + now.Year);
+			Console.WriteLine("Month : " + now.Month);
+			Console.WriteLine("Day : " + now.Day);
+			Console.WriteLine("Hour : " + now.Hour);
+			Console.WriteLine("Minute : " + now.Minute);
+			Console.WriteLine("Second : " + now.Second);
+			Console.WriteLine("MilliSecond : " + now.Millisecond);			
+		}
+	}
+	
+}
+----------------------------------------------------------------------------------------------------------
+
+// Question 3
+
+using System;
+
+
+namespace DateTimePractical {
+
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			DateTime now = DateTime.Now;
+			Console.WriteLine( "The day of the Week for " + DateTime.Now.ToString("d") + " is " + now.DayOfWeek); 		
+		}
+	}
+	
+}
+
+----------------------------------------------------------------------------------------------------------
+
+// Question 4
+
+using System;
+using System.Globalization; // Especially used for fun() CultureInfo
+
+namespace DateTimePractical {
+
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			DateTime localDate = DateTime.Now;
+			DateTime utcDate = DateTime.UtcNow;
+			String[] countryNames = { "en-US" , "en-IN" };
+			
+			foreach (var countryName in countryNames){
+				var country = new CultureInfo(countryName);
+				Console.WriteLine( "{0} :" , country.NativeName);
+				Console.WriteLine("Local date and time: {0}, {1:G}", localDate.ToString(country), localDate.Kind);
+				Console.WriteLine("UTC date and time: {0}, {1:G}\n", utcDate.ToString(country), utcDate.Kind);
+			}
+		}
+	}
+	
+}
+
+----------------------------------------------------------------------------------------------------------
